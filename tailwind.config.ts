@@ -12,6 +12,11 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        pioneer: "var(--font-ben-pioneer)",
+        montserrat: "var(--font-montserrat)",
+        "montserrat-alternates": "var(--font-montserrat-alternates)",
+      },
     },
   },
   plugins: [],
