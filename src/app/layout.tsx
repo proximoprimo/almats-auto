@@ -7,7 +7,7 @@ import { Footer, Header } from "@/components/layout";
 const montserrat = Montserrat({
   variable: "--font-montserrat",
   subsets: ["cyrillic"],
-  weight: ["200", "400", "500", "600", "700"],
+  weight: ["200", "400", "500", "600", "700", "900"],
 });
 const montserratAlternates = Montserrat_Alternates({
   variable: "--font-montserrat-alternates",
@@ -33,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${benPioneer.variable} ${montserrat.variable} ${montserratAlternates.variable} antialiased pt-5`}
+        className={`${benPioneer.variable} ${montserrat.variable} ${montserratAlternates.variable} antialiased [&>main>section:first-child]:pt-36`}
       >
         <Header />
         <main>{children}</main>

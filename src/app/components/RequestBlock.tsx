@@ -4,14 +4,14 @@ import { Title } from "@/components/common/title";
 
 const RequestBlock = () => {
   return (
-    <div className="border-foreground rounded-b-2xl px-5 py-8 border">
+    <div className="px-5 py-8 border border-foreground rounded-b-2xl">
       <Title
-        className="font-montserrat text-2xl font-semibold text-center text-black"
+        className="text-2xl font-semibold text-center text-black font-montserrat"
         level={3}
       >
         Оставьте заявку и мы с вами свяжемся
       </Title>
-      <div className="flex flex-col gap-8 mt-8">
+      <div className="flex flex-col mt-8 gap-8">
         <TextInput />
         <TextInput />
       </div>

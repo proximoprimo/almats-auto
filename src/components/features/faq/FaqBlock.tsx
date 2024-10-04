@@ -30,7 +30,7 @@ const FaqBlock = () => {
   const [active, setActive] = useState(0);
 
   return (
-    <div className="flex flex-col gap-5 mx-5 mt-8">
+    <div className="flex flex-col mx-5 mt-8 gap-5">
       {QUESTIONS.map((question, index) => (
         <FaqItem
           key={index}

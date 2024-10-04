@@ -6,7 +6,7 @@ export interface FooterLink {
 }
 
 const FooterLink = ({ name, href }: FooterLink) => {
-  return <Link className="font-montserrat-alternates font-semibold" href={href}>{name}</Link>;
+  return <Link className="font-semibold font-montserrat-alternates" href={href}>{name}</Link>;
 };
 
 export default FooterLink;

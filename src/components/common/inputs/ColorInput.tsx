@@ -25,7 +25,7 @@ const ColorInput = ({ label, className }: ColorInputProps) => {
         {COLORS.map((color) => (
           <div
             key={color}
-            className="w-7 h-7 rounded-full"
+            className="rounded-full w-7 h-7"
             style={{ backgroundColor: color }}
           />
         ))}

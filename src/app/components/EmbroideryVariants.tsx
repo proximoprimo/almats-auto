@@ -9,7 +9,7 @@ const EmbroideryVariants = ({ label }: EmbroideryVariantsProps) => {
     <div>
       <div className="mt-5 font-bold">{label}</div>
 
-      <div className="grid grid-cols-3 gap-6 mt-5">
+      <div className="mt-5 grid grid-cols-3 gap-6">
         <Image
           src="/main/calc/embroidery.svg"
           alt=""

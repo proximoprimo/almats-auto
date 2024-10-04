@@ -10,15 +10,15 @@ import RequestBlock from "./components/RequestBlock";
 export default function Home() {
   return (
     <>
-      <section className="px-6 pb-8">
+      <section className="px-6 pb-8 bg-[#121212]">
         <Title level={1} className="text-center">
           ALMATS
         </Title>
         <div className="grid grid-cols-2 gap-5">
-          <div className="text-xs font-bold bg-foreground p-2.5 rounded-full font-pioneer flex justify-center items-center">
+          <div className="text-[10px] text-black font-bold bg-foreground p-2.5 rounded-full font-pioneer flex justify-center items-center">
             КАЧЕСТВО
           </div>
-          <div className="text-xs bg-foreground p-2.5 rounded-full font-pioneer flex justify-center items-center">
+          <div className="text-[10px] text-black bg-foreground p-2.5 rounded-full font-pioneer flex justify-center items-center">
             СТАБИЛЬНОСТЬ
           </div>
         </div>
@@ -77,7 +77,7 @@ export default function Home() {
         </section>
 
         <section className="mx-5 mt-12">
-          <ContactBlock className="rounded-b-none" />
+          <ContactBlock className="rounded-b-none" withLogo={true} />
           <RequestBlock />
         </section>
       </div>

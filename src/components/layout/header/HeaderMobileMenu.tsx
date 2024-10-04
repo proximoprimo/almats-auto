@@ -6,12 +6,13 @@ import Image from "next/image";
 import Link from "next/link";
 
 const HeaderMobileMenu = () => {
-  const { isMenuOpen } = useHeaderStore();
+  const { isMenuOpen, toggleMenu } = useHeaderStore();
 
   if (!isMenuOpen) return null;
 
   return (
     <nav
+      onClick={toggleMenu}
       className={cn(
         "gap-7 flex flex-col max-h-[calc(100vh-60px-80px)] overflow-auto transition"
       )}

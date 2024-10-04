@@ -12,12 +12,12 @@ const Calculator = () => {
   const [pendulum, setPendulum] = useState(false);
 
   return (
-    <div className="rounded-2xl p-5 mx-5 mt-12 bg-black">
+    <div className="p-5 mx-5 mt-12 bg-black rounded-2xl">
       <div className="flex flex-col gap-5">
         <Button>Выберите марку автомобиля</Button>
         <Button>Выберите модель автомобиля</Button>
       </div>
-      <Subtitle className="font-montserrat mt-8 font-bold text-center">
+      <Subtitle className="mt-8 font-bold text-center font-montserrat">
         Выберите ряд
       </Subtitle>
       <Image
@@ -64,7 +64,7 @@ const Calculator = () => {
 
       <EmbroideryVariants label="Передние позиции" />
       <EmbroideryVariants label="Задние позиции" />
-      <div className="rounded-2xl p-4 mt-8 bg-white">
+      <div className="p-4 mt-8 bg-white rounded-2xl">
         <div className="font-bold text-center text-black">
           Дополнительная информация
         </div>

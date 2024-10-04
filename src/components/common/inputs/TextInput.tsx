@@ -1,4 +1,6 @@
-const TextInput = (props: React.HTMLProps<HTMLInputElement>) => {
+export interface TextInputProps extends React.HTMLProps<HTMLInputElement> {}
+
+const TextInput = (props: TextInputProps) => {
   return (
     <label className="bg-foreground rounded-2xl block w-full p-3 py-4">
       <input

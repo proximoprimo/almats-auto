@@ -5,9 +5,9 @@ import HeaderMobileMenu from "./HeaderMobileMenu";
 
 const Header = () => {
   return (
-    <header className="bg-foreground rounded-3xl top-5 sticky z-50 flex flex-col gap-4 px-5 py-4 m-5 mt-0 overflow-hidden">
+    <header className="bg-foreground rounded-3xl top-5 fixed z-50 flex flex-col gap-4 px-5 py-4 m-5 mt-0 overflow-hidden w-[calc(100%-40px)]">
       <div className="flex justify-between">
-        <Link href={'/'}>
+        <Link href={"/"}>
           <Logo />
         </Link>
         <HeaderMenuButton />

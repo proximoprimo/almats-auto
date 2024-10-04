@@ -3,14 +3,16 @@
 @tailwind utilities;
 
 :root {
-  --background: #121212;
+  --background: #fff;
   --foreground: #fce000;
+  --secondary: #121212;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #121212;
+    --background: #fff;
     --foreground: #fce000;
+    --secondary: #121212;
   }
 }
 
@@ -24,4 +26,27 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.delivery-terms div:nth-child(2n + 1) {
+  padding-right: 20px;
+  padding-bottom: 15px;
+  font-weight: bold;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.delivery-terms div:nth-child(2n) {
+  padding-left: 10px;
+  padding-bottom: 15px;
+}
+.delivery-terms div:nth-child(2n) {
+  border-bottom: 1px solid black;
+}
+
+/* remove bottom border from last elements */
+.delivery-terms div:last-child {
+  border-bottom: none;
+}
+.delivery-terms > div:nth-child(9) {
+  border-bottom: none;
 }
