@@ -36,7 +36,7 @@ const CartPage = () => {
         <Subtitle>Корзина</Subtitle>
         <div className="flex flex-col gap-8">{CartList}</div>
 
-        <div className="bg-secondary rounded-2xl p-5 mt-8">
+        <div className="p-5 mt-8 bg-secondary rounded-2xl">
           <div className="bg-foreground px-2.5 py-5 rounded-2xl">
             <div className="flex justify-between text-xl font-bold text-black">
               <div>Наличные</div>

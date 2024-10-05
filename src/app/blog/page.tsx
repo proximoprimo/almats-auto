@@ -32,7 +32,7 @@ const BlogPage = () => {
         <BlogFilter />
       </Section>
       <Section>
-        <div className="flex flex-col gap-12 mt-12">{BlogList}</div>
+        <div className="flex flex-col mt-12 gap-12">{BlogList}</div>
       </Section>
     </>
   );

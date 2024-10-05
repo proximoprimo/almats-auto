@@ -24,7 +24,7 @@ const ContactsPage = () => {
             <div>ИНН</div>
             <div>1234567890</div>
           </div>
-          <div className="rounded-b-md p-10 bg-black">
+          <div className="p-10 bg-black rounded-b-md">
             <Logo className="mx-auto" width={307} height={176} style="white" />
           </div>
         </div>

@@ -20,14 +20,14 @@ const HeaderMobileMenu = () => {
       {NAVIGATION_LINKS.map((link) => (
         <Link
           key={link.href}
-          className="font-montserrat-alternates text-2xl font-semibold text-center text-black"
+          className="text-2xl font-semibold text-center text-black font-montserrat-alternates"
           href={link.href}
         >
           {link.name}
         </Link>
       ))}
       <Link
-        className="font-montserrat-alternates text-2xl font-semibold text-center text-black"
+        className="text-2xl font-semibold text-center text-black font-montserrat-alternates"
         href={"/cart"}
       >
         Корзина

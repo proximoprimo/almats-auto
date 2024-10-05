@@ -1,5 +1,5 @@
 import cn from "@/utils/cn";
-import { Question } from "./FaqBlock";
+import { Question } from "./MobileFaqBlock";
 
 interface FaqItemProps {
   question: Question;

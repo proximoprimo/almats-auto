@@ -23,7 +23,7 @@ const AboutPage = () => {
           width={336}
           height={286}
         />
-        <div className="font-montserrat-alternates px-5 mt-5 text-xl text-center">
+        <div className="px-5 mt-5 text-xl text-center font-montserrat-alternates">
           В нашем ассортименте представлены различные аксессуары для авто, среди
           которых можно найти что-то подходящее для любого автомобиля и любого
           водителя
@@ -56,7 +56,7 @@ const AboutPage = () => {
               <div>ИНН</div>
               <div>1234567890</div>
             </div>
-            <div className="rounded-b-md p-10 bg-black">
+            <div className="p-10 bg-black rounded-b-md">
               <Logo
                 className="mx-auto"
                 width={307}

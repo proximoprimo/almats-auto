@@ -33,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${benPioneer.variable} ${montserrat.variable} ${montserratAlternates.variable} antialiased [&>main>section:first-child]:pt-36`}
+        className={`${benPioneer.variable} ${montserrat.variable} ${montserratAlternates.variable} antialiased [&>main>section:first-child]:pt-36 xl:[&>main>section:first-child]:pt-44`}
       >
         <Header />
         <main>{children}</main>

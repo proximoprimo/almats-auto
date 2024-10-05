@@ -8,8 +8,9 @@ const HeaderMenuButton = () => {
 
   return (
     <Image
+      className="lg:hidden"
       onClick={toggleMenu}
-      src="menu.svg"
+      src="/menu.svg"
       alt="меню"
       width={50}
       height={50}

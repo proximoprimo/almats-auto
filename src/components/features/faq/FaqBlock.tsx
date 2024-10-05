@@ -1,7 +1,5 @@
-"use client";
-
-import { useState } from "react";
-import FaqItem from "./FaqItem";
+import DesktopFaqBlock from "./DesktopFaqBlock";
+import MobileFaqBlock from "./MobileFaqBlock";
 
 export interface Question {
   question: string;
@@ -27,20 +25,11 @@ const QUESTIONS: Question[] = [
 ];
 
 const FaqBlock = () => {
-  const [active, setActive] = useState(0);
-
   return (
-    <div className="flex flex-col mx-5 mt-8 gap-5">
-      {QUESTIONS.map((question, index) => (
-        <FaqItem
-          key={index}
-          question={question}
-          open={active === index}
-          index={index}
-          setActive={setActive}
-        />
-      ))}
-    </div>
+    <>
+      <MobileFaqBlock questions={QUESTIONS} />
+      <DesktopFaqBlock questions={QUESTIONS} />
+    </>
   );
 };
 

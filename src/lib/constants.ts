@@ -1,7 +1,7 @@
 import { FooterLink } from "@/components/layout/footer/FooterLink";
 
 export const NAVIGATION_LINKS: FooterLink[] = [
-  { name: "Главная", href: "/about" },
+  { name: "Главная", href: "/" },
   { name: "О нас", href: "/about" },
   { name: "Доставка и оплата", href: "/delivery" },
   { name: "Каталог", href: "/catalog" },

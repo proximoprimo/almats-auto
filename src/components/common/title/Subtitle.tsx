@@ -13,8 +13,8 @@ const Subtitle = ({ children, className, size = "md" }: SubtitleProps) => {
       level={4}
       className={cn(
         {
-          "text-base": size === "sm",
-          "text-xl": size === "md",
+          "text-base lg:text-2xl": size === "sm",
+          "text-xl lg:text-4xl": size === "md",
           "text-2xl": size === "lg",
         },
         className

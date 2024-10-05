@@ -9,7 +9,7 @@ const Button = ({ children, className }: ButtonProps) => {
   return (
     <button
       className={cn(
-        "px-5 rounded-2xl text-center font-bold text-black bg-foreground py-6 cursor-pointer w-full",
+        "lg:text-xl px-5 rounded-2xl text-center font-bold text-black bg-foreground py-6 cursor-pointer w-full",
         className
       )}
     >

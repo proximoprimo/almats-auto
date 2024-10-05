@@ -10,9 +10,9 @@ interface CartItemProps {
 
 const CartItem = ({ count, description, image, name }: CartItemProps) => {
   return (
-    <div className="border-foreground rounded-2xl p-5 pb-12 text-black border-2">
+    <div className="p-5 pb-12 text-black border-2 border-foreground rounded-2xl">
       <Image
-        className="rounded-2xl w-full"
+        className="w-full rounded-2xl"
         src={image}
         alt=""
         width={300}
@@ -20,7 +20,7 @@ const CartItem = ({ count, description, image, name }: CartItemProps) => {
       />
       <div className="mt-8 text-2xl font-black">{name}</div>
       <div className="mt-5 text-xl font-medium">{description}</div>
-      <div className="bg-foreground rounded-2xl flex justify-center gap-5 p-4 mt-5 text-xl font-bold">
+      <div className="flex justify-center p-4 mt-5 text-xl font-bold bg-foreground rounded-2xl gap-5">
         <div>-</div>
         {count}
         <div>+</div>

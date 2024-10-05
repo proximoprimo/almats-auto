@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Logo } from "../../common";
 import HeaderMenuButton from "./HeaderMenuButton";
 import HeaderMobileMenu from "./HeaderMobileMenu";
+import DesktopMenu from "./DesktopMenu";
 
 const Header = () => {
   return (
@@ -10,6 +11,7 @@ const Header = () => {
         <Link href={"/"}>
           <Logo />
         </Link>
+        <DesktopMenu />
         <HeaderMenuButton />
       </div>
 

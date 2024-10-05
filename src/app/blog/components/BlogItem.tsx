@@ -14,10 +14,10 @@ const BlogItem = ({ content, time, title }: BlogItemProps) => {
   });
 
   return (
-    <div className="bg-secondary rounded-2xl p-8">
+    <div className="p-8 bg-secondary rounded-2xl">
       <div className="text-xl font-bold">{title}</div>
       <div className="mt-5 text-xl font-medium">{content}</div>
-      <div className="opacity-70 mt-5 text-xl font-medium">{dateString}</div>
+      <div className="mt-5 text-xl font-medium opacity-70">{dateString}</div>
       <Button className="py-5 mt-5 rounded-full">Прочитать</Button>
     </div>
   );

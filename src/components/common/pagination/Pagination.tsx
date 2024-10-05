@@ -1,7 +1,7 @@
 const Pagination = () => {
   return (
-    <div className="justify-items-center grid items-center grid-cols-6 mt-12 text-xl text-black">
-      <div className="bg-foreground flex items-center justify-center w-12 h-12 rounded">
+    <div className="items-center mt-12 text-xl text-black justify-items-center grid grid-cols-6">
+      <div className="flex items-center justify-center w-12 h-12 rounded bg-foreground">
         1
       </div>
       <div>2</div>

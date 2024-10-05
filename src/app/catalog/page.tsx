@@ -31,7 +31,7 @@ const CatalogPage = () => {
       <Section className="px-0">
         <CatalogFilter />
       </Section>
-      <Section className="flex flex-col gap-8 mt-16">
+      <Section className="flex flex-col mt-16 gap-8">
         {ProductList}
         <Pagination />
       </Section>

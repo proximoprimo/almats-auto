@@ -1,2 +1,2 @@
-export { default as FaqBlock } from "./FaqBlock";
+export { default as MobileFaqBlock } from "./MobileFaqBlock";
 export { default as FaqItem } from "./FaqItem";

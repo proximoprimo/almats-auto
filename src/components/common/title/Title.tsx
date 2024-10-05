@@ -13,7 +13,7 @@ const Title: React.FC<TitleProps> = ({
 }: TitleProps) => {
   const Tag = `h${level}` as keyof JSX.IntrinsicElements;
   return (
-    <Tag className={cn("text-5xl font-pioneer text-white", className)}>
+    <Tag className={cn("text-5xl lg:text-6xl font-pioneer text-white", className)}>
       {children}
     </Tag>
   );

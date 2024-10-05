@@ -14,10 +14,10 @@ const CatalogProduct = ({
   buttons,
 }: CatalogProductProps) => {
   return (
-    <div className="bg-secondary rounded-2xl p-8 pb-5">
+    <div className="p-8 pb-5 bg-secondary rounded-2xl">
       <div className="text-xl font-bold">{name}</div>
       <Image
-        className="rounded-2xl border-foreground h-44 object-cover mt-5 border-2"
+        className="object-cover mt-5 border-2 rounded-2xl border-foreground h-44"
         src={image}
         alt=""
         width={340}

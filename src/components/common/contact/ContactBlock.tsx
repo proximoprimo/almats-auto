@@ -20,7 +20,7 @@ const ContactBlock = ({
   return (
     <address
       className={cn(
-        "flex flex-col gap-7 not-italic rounded-2xl py-5 bg-black",
+        "flex flex-col gap-7 not-italic rounded-2xl py-5 lg:py-12 bg-black",
         className
       )}
     >
@@ -41,7 +41,7 @@ const ContactBlock = ({
         </a>
       </div>
       {withLogo && (
-        <Logo className="mx-auto" width={300} height={171} style="white" />
+        <Logo className="lg:mt-16 mx-auto" width={300} height={171} style="white" />
       )}
       {withMap && <Map />}
     </address>
