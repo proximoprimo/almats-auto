@@ -7,7 +7,7 @@ interface EmbroideryVariantsProps {
 const EmbroideryVariants = ({ label }: EmbroideryVariantsProps) => {
   return (
     <div>
-      <div className="mt-5 font-bold">{label}</div>
+      <div className="mt-5 font-bold text-white">{label}</div>
 
       <div className="mt-5 grid grid-cols-3 gap-6">
         <Image

@@ -1,8 +1,8 @@
 import Image from "next/image";
 
-const CatalogFilter = () => {
+const MobileFilterBlock = () => {
   return (
-    <div className="bg-secondary text-foreground flex justify-between p-5 font-semibold gap-2.5">
+    <div className="flex justify-between w-full lg:hidden">
       <div className="flex items-center gap-2.5">
         <Image
           className="mx-auto"
@@ -27,4 +27,4 @@ const CatalogFilter = () => {
   );
 };
 
-export default CatalogFilter;
+export default MobileFilterBlock;

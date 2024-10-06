@@ -5,20 +5,20 @@
 :root {
   --background: #fff;
   --foreground: #fce000;
-  --secondary: #121212;
+  --background: #121212;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #fff;
+    --background: #121212;
     --foreground: #fce000;
-    --secondary: #121212;
+    --background: #121212;
   }
 }
 
 body {
-  color: #fff;
-  background: var(--background);
+  color: #000;
+  background: #fff;
   font-family: var(--font-montserrat), Arial, Helvetica, sans-serif;
 }
 

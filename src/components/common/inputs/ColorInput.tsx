@@ -20,7 +20,7 @@ interface ColorInputProps {
 const ColorInput = ({ label, className }: ColorInputProps) => {
   return (
     <div className={cn("lg:grid lg:grid-cols-[max-content,auto] gap-5", className)}>
-      <div className="text-lg font-bold mb-2.5">{label}</div>
+      <div className="text-lg font-bold mb-2.5 text-white">{label}</div>
       <div className="justify-items-center grid grid-cols-9 lg:gap-2">
         {COLORS.map((color) => (
           <div

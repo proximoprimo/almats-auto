@@ -20,7 +20,7 @@ const CheckBox = ({
   };
 
   return (
-    <label className={cn("flex items-center gap-4", className)}>
+    <label className={cn("flex items-center gap-4 cursor-pointer text-white", className)}>
       <input
         value={value ? "on" : "off"}
         type="checkbox"

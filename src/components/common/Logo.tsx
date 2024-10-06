@@ -6,6 +6,7 @@ interface LogoProps {
   height?: number;
   width?: number;
   className?: string;
+  imageClassName?: string;
 }
 
 const Logo = ({
@@ -13,6 +14,7 @@ const Logo = ({
   height = 46,
   width = 80,
   className,
+  imageClassName,
 }: LogoProps) => {
   let src;
 
@@ -27,7 +29,13 @@ const Logo = ({
 
   return (
     <div className={cn(className)}>
-      <Image src={src} alt="Логотип" width={width} height={height} />
+      <Image
+        className={cn(imageClassName)}
+        src={src}
+        alt="Логотип"
+        width={width}
+        height={height}
+      />
     </div>
   );
 };

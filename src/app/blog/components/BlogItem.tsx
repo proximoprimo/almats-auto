@@ -14,7 +14,7 @@ const BlogItem = ({ content, time, title }: BlogItemProps) => {
   });
 
   return (
-    <div className="p-8 bg-secondary rounded-2xl">
+    <div className="p-8 bg-background rounded-2xl">
       <div className="text-xl font-bold">{title}</div>
       <div className="mt-5 text-xl font-medium">{content}</div>
       <div className="mt-5 text-xl font-medium opacity-70">{dateString}</div>

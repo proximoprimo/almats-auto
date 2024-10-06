@@ -11,7 +11,6 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        secondary: "var(--secondary)",
       },
       fontFamily: {
         pioneer: "var(--font-ben-pioneer)",
