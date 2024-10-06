@@ -11,7 +11,7 @@ const DesktopDeliveryTable = () => {
   const tableHeaderClass = "font-bold";
 
   return (
-    <div className="bg-background p-8">
+    <div className="p-8 bg-background">
       <div className="flex gap-8">
         {CITIES.map((city, index) => (
           <div
@@ -28,7 +28,7 @@ const DesktopDeliveryTable = () => {
           </div>
         ))}
       </div>
-      <div className="bg-foreground flex py-8 rounded-2xl rounded-tl-none">
+      <div className="flex py-8 rounded-tl-none bg-foreground rounded-2xl">
         <div className={tableItemClass}>
           <div className={tableHeaderClass}>Способ доставки</div>
           <div>{DELIVERY_DATA[cityIndex][0]}</div>

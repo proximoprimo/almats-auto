@@ -16,7 +16,7 @@ const DesktopFilterBlock = () => {
       {FILTER_OPTIONS.map((option) => (
         <div
           key={option}
-          className="bg-foreground h-16 text-sm font-bold text-black flex justify-start items-center lg:px-8 xl:px-12 rounded-full"
+          className="flex items-center justify-start h-16 text-sm font-bold text-black rounded-full bg-foreground lg:px-8 xl:px-12"
         >
           {option}
         </div>

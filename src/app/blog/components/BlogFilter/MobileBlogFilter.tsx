@@ -1,8 +1,8 @@
 import Image from "next/image";
 
-const BlogFilter = () => {
+const MobileBlogFilter = () => {
   return (
-    <div className="bg-background text-foreground flex justify-between p-5 font-semibold gap-2.5">
+    <div className="lg:hidden flex justify-between w-full">
       <div className="flex items-center gap-2.5">
         <Image
           className="mx-auto"
@@ -26,4 +26,4 @@ const BlogFilter = () => {
   );
 };
 
-export default BlogFilter;
+export default MobileBlogFilter;

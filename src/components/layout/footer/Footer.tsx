@@ -6,10 +6,10 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <footer className="p-5 mt-12 bg-white">
-      <div className="rounded-2xl xl:flex items-center p-8 bg-background text-white">
+      <div className="items-center p-8 text-white rounded-2xl xl:flex bg-background">
         <div className="flex justify-between">
           <Logo style="white" />
-          <div className="xl:hidden flex flex-col justify-between font-bold">
+          <div className="flex flex-col justify-between font-bold xl:hidden">
             <a href="tel:79999999999">+7 999 999 99-99</a>
             <a href="mailto:mail@mail.com">mail@mail.com</a>
           </div>
@@ -24,7 +24,7 @@ const Footer = () => {
           <Image src="/social/tg.svg" alt="whatsapp" width={70} height={70} />
           <Image src="/social/vk.svg" alt="whatsapp" width={70} height={70} />
         </div>
-        <div className="xl:flex flex-col justify-between hidden font-bold">
+        <div className="flex-col justify-between hidden font-bold xl:flex">
           <a href="tel:79999999999">+7 999 999 99-99</a>
           <a href="mailto:mail@mail.com">mail@mail.com</a>
         </div>

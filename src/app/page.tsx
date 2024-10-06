@@ -1,19 +1,18 @@
 import { Button } from "@/components/common";
+import { ContactBlock } from "@/components/common/contact";
 import { Subtitle, Title } from "@/components/common/title";
+import FaqBlock from "@/components/features/faq/FaqBlock";
+import { Section } from "@/components/layout/section";
 import Image from "next/image";
 import Advantage from "./components/Advantage";
 import Calculator from "./components/Calculator";
-import { MobileFaqBlock } from "@/components/features/faq";
-import { ContactBlock } from "@/components/common/contact";
 import RequestBlock from "./components/RequestBlock";
-import FaqBlock from "@/components/features/faq/FaqBlock";
-import { Section } from "@/components/layout/section";
 
 export default function Home() {
   return (
     <>
       <Section className="pb-8 lg:pb-12 bg-[#121212] lg:grid lg:grid-cols-[55fr_53fr] lg:grid-rows-[repeat(4,auto)] lg:gap-x-36">
-        <Title level={1} className="lg:order-1 text-center lg:text-left">
+        <Title level={1} className="lg:order-1 lg:text-left text-center">
           ALMATS
         </Title>
         <div className="text-[10px] lg:h-11 mt-4 lg:mt-8 lg:text-xs grid grid-cols-2 gap-x-5 lg:order-2">
@@ -36,7 +35,7 @@ export default function Home() {
           которых можно найти что-то подходящее для любого автомобиля и любого
           водителя
         </div>
-        <div className="lg:order-4 xl:h-min flex justify-center mt-5 lg:mt-8">
+        <div className="lg:order-4 xl:h-min lg:mt-8 flex justify-center mt-5">
           <Button className="w-5/6 rounded-full">Оставить заявку</Button>
         </div>
       </Section>

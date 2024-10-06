@@ -14,6 +14,8 @@ const SingleProductPage = () => {
     <Section>
       <CatalogProduct
         {...PRODUCT}
+        className="lg:p-12"
+        imageClassName="lg:h-[500px] lg:mt-12"
         buttons={
           <Button className="mt-5 flex py-4 gap-2.5 justify-center items-center rounded-3xl">
             <Image src="/icons/cart.svg" alt="" width={30} height={30} />

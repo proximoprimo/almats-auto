@@ -40,7 +40,7 @@ const DeliveryPage = () => {
         <Subtitle className="my-12 text-center text-black">
           Условия оплаты
         </Subtitle>
-        <div className="flex flex-col items-center px-10 py-12 bg-background text-white rounded-2xl gap-12 lg:flex-row lg:justify-between lg:px-20">
+        <div className="flex flex-col items-center px-10 py-12 text-white bg-background rounded-2xl gap-12 lg:flex-row lg:justify-between lg:px-20">
           {TERMS_ITEMS.map((item) => (
             <div key={item.title} className="flex flex-col gap-8 lg:grid-rows-[1fr,auto] lg:h-60">
               <Image

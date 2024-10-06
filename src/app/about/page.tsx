@@ -29,7 +29,7 @@ const AboutPage = () => {
           width={336}
           height={286}
         />
-        <div className="px-5 mt-5 text-xl text-center font-montserrat-alternates lg:order-3 lg:text-2xl xl:text-3xl lg:text-left text-white">
+        <div className="px-5 mt-5 text-xl text-center text-white font-montserrat-alternates lg:order-3 lg:text-2xl xl:text-3xl lg:text-left">
           В нашем ассортименте представлены различные аксессуары для авто, среди
           которых можно найти что-то подходящее для любого автомобиля и любого
           водителя
@@ -41,7 +41,7 @@ const AboutPage = () => {
       <div className="p-5 pt-8 bg-white">
         <div>
           <Subtitle className="text-center text-black">Как нас найти</Subtitle>
-          <ContactBlock className="lg:flex-row mt-5 lg:mt-12" />
+          <ContactBlock className="mt-5 lg:flex-row lg:mt-12" />
         </div>
         <div>
           <Subtitle className="mt-10 text-center text-black">

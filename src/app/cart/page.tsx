@@ -3,6 +3,7 @@ import { Subtitle } from "@/components/common/title";
 import { Section } from "@/components/layout/section";
 import CartItem from "./components/CartItem";
 import CartInput from "./components/CartInput";
+import TabBlock, { TabItem } from "@/components/features/tab/TabBlock";
 
 const CART_ITEMS = [
   {
@@ -25,18 +26,56 @@ const CART_ITEMS = [
   },
 ];
 
+const CartOptions = ["Наличные", "Картой", "По счету"];
+
 const CartPage = () => {
   const CartList = CART_ITEMS.map((item) => (
     <CartItem key={item.name} {...item} />
   ));
 
+  const Content = (
+    <div className="grid grid-cols-[70fr,42fr] gap-20 w-full">
+      <div className="mt-12">
+        <CartInput
+          labelClassName="bg-background lg:py-3"
+          placeholder="Адрес доставки"
+        />
+        <CartInput labelClassName="bg-background lg:py-3" placeholder="Имя" />
+        <CartInput
+          labelClassName="bg-background lg:py-3"
+          placeholder="Контактный телефон"
+        />
+        <CartInput
+          labelClassName="bg-background lg:py-3"
+          placeholder="e-mail"
+        />
+      </div>
+      <div className="flex flex-col justify-between pr-12">
+        <div className="mt-12 flex flex-col gap-2.5 text-4xl font-pioneer">
+          <div className="text-white">итого</div>
+          <div className="text-foreground">50000 ₽</div>
+          <div className="text-foreground">3 позиции</div>
+        </div>
+
+        <Button className="mt-8 rounded-full py-3.5">Оставить заявку</Button>
+      </div>
+    </div>
+  );
+
+  const tabItems: TabItem[] = CartOptions.map((option) => ({
+    label: option,
+    content: Content,
+  }));
+
   return (
     <>
       <Section>
-        <Subtitle>Корзина</Subtitle>
-        <div className="flex flex-col gap-8">{CartList}</div>
-
-        <div className="p-5 mt-8 bg-background rounded-2xl">
+        <Subtitle className="lg:text-4xl lg:text-left text-center text-black">
+          Корзина
+        </Subtitle>
+        <div className="flex flex-col gap-8 mt-12">{CartList}</div>
+        <TabBlock tabItems={tabItems} invert={true} />
+        <div className="bg-background rounded-2xl lg:hidden p-5 mt-8">
           <div className="bg-foreground px-2.5 py-5 rounded-2xl">
             <div className="flex justify-between text-xl font-bold text-black">
               <div>Наличные</div>

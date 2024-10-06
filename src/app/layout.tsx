@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import { Montserrat, Montserrat_Alternates } from "next/font/google";
 import "./globals.css";
 import { Footer, Header } from "@/components/layout";
+import DesktopCartIcon from "@/components/layout/cart/DesktopCartIcon";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -37,6 +38,7 @@ export default function RootLayout({
       >
         <Header />
         <main>{children}</main>
+        <DesktopCartIcon />
         <Footer />
       </body>
     </html>

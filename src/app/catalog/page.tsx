@@ -33,7 +33,7 @@ const CatalogPage = () => {
         <CatalogFilter />
         <DesktopOrderBlock />
       </Section>
-      <Section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 mt-16 gap-8 lg:gap-12">
+      <Section className="mt-16 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 lg:gap-12">
         {ProductList}
       </Section>
       <Section>

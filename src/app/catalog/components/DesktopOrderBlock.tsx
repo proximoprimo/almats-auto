@@ -10,7 +10,7 @@ const DesktopOrderBlock = () => {
   const [orderIndex, setOrderIndex] = useState(0);
 
   return (
-    <Section className="flex items-center gap-5 mt-8">
+    <Section className="lg:flex items-center hidden gap-5 mt-8">
       <div className="text-xl font-bold">Сортировка</div>
       {ORDER_OPTIONS.map((option, index) => (
         <div

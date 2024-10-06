@@ -81,12 +81,12 @@ const Calculator = () => {
         <EmbroideryVariants label="Задние позиции" />
       </div>
       <div className="p-4 mt-8 bg-white lg:mt-12 rounded-2xl">
-        <div className="font-bold text-center lg:text-xl text-black">
+        <div className="font-bold text-center text-black lg:text-xl">
           Дополнительная информация
         </div>
         <div>
           <textarea
-            className="w-full p-2 lg:p-4 mt-2 lg:mt-4 text-black border border-black rounded outline-none resize-none lg:text-xl"
+            className="w-full p-2 mt-2 text-black border border-black rounded outline-none resize-none lg:p-4 lg:mt-4 lg:text-xl"
             rows={4}
           />
         </div>

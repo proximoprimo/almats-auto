@@ -27,7 +27,7 @@ const DesktopFaqBlock = ({ questions }: DesktopFaqBlockProps) => {
 
   return (
     <div className="lg:grid grid-cols-[44fr,62fr] gap-2.5 hidden">
-      <div className="bg-foreground rounded-2xl p-8 text-xl font-medium text-black">
+      <div className="p-8 text-xl font-medium text-black bg-foreground rounded-2xl">
         {questions[active].answer}
       </div>
       <div className="flex flex-col gap-12">{QuestionList}</div>

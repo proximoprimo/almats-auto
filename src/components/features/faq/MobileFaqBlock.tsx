@@ -12,7 +12,7 @@ const MobileFaqBlock = ({ questions }: MobileFaqBlockProps) => {
   const [active, setActive] = useState(0);
 
   return (
-    <div className="lg:hidden flex flex-col gap-5 mt-8">
+    <div className="flex flex-col mt-8 lg:hidden gap-5">
       {questions?.map((question, index) => (
         <FaqItem
           key={index}
